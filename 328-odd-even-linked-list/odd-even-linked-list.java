@@ -19,17 +19,17 @@ class Solution {
             temp = temp.next;
         } 
         temp = head;
-        for(int i=0; i<al.size(); i++){
-            if(i%2==0){
+        for(int i=0; i<al.size(); i+=2){
+            
                 temp.val = al.get(i);
                 temp = temp.next;
-            }
+            
         }
-        for(int i=1; i<al.size(); i++){
-            if(i%2!=0){
+        for(int i=1; i<al.size(); i+=2){
+            
                 temp.val = al.get(i);
                 temp = temp.next;
-            }
+            
         }
         return head;
         
